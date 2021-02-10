@@ -16,7 +16,13 @@
 # and last chars of the string are the same.
 # Note: python does not have a ++ operator, but += works.
 def match_ends(words):
-    return
+    matches = []
+    for word in words:
+        if len(word) < 1:
+            continue
+        elif word[0] == word[-1] and len(word)>=2:
+            matches.append(word)
+    return len(matches)
 
 # B. front_x
 # Given a list of strings, return a list with the strings
