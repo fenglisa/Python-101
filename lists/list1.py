@@ -32,7 +32,16 @@ def match_ends(words):
 # Hint: this can be done by making 2 lists and sorting each of them
 # before combining them.
 def front_x(words):
-    return
+    begins_with_x = []
+    other_words = []
+    for word in words:
+        if word[0] == 'x':
+            begins_with_x.append(word)
+        else:
+            other_words.append(word)
+    begins_with_x.sort()
+    other_words.sort()
+    return begins_with_x + other_words
 
 # C. sort_last
 # Given a list of non-empty tuples, return a list sorted in increasing
