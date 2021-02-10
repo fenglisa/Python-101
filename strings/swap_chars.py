@@ -7,7 +7,13 @@
 # Output: 'Usiverne'
 
 def swap_chars(s, index1, index2):
-    return
+    letters = list(s)
+    first = letters[index1]
+    second = letters[index2]
+    letters[index1] = second
+    letters[index2] = first
+    final_string = ''
+    return final_string.join(letters)
 
 def test(got, expected):
     if got == expected:
