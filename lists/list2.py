@@ -9,15 +9,15 @@
 # modify the passed in list.
 def remove_adjacent(nums):
     nums_set = set(nums)
-    return list(nums_set)   
+    return list(nums_set)
 
 # E. Given two lists sorted in increasing order, create and return a merged
 # list of all the elements in sorted order. You may modify the passed in lists.
 # Ideally, the solution should work in "linear" time, making a single
 # pass of both lists.
 def linear_merge(list1, list2):
-    # +++ Your code here +++
-    return
+    merged_lists = list1 + list2
+    return sorted(merged_lists)
 
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
