@@ -4,7 +4,9 @@
 # Else it will return False
 
 def unique_chars(s):
-    return
+    string_list = list(s)
+    unique_list = list(set(s))
+    return sorted(unique_list) == sorted(string_list)
 
 if __name__ == '__main__':
 
