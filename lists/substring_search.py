@@ -26,7 +26,13 @@
 # -in-a-sentence/
 
 def substring_index(sentence, searchword):
-    return
+    if searchword in sentence:
+        words = sentence.split()
+    else:
+        return -1
+    for word in words:
+        if searchword in word:
+            return words.index(word)
 
 def test(got, expected):
     if got == expected:
